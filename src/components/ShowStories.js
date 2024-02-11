@@ -1,22 +1,27 @@
 import React from 'react';
 import Story from './Story';
 import useDataFetcher from '../hooks/dataFetcher';
-import { useParams } from 'react-router-dom'; // Import useParams hook
+import { useParams } from 'react-router-dom';
+import Card from 'react-bootstrap/Card'; // Import Card component from React Bootstrap
+import Spinner from 'react-bootstrap/Spinner'; // Import Spinner component from React Bootstrap
 
-const ShowStories = ({ match }) => {
-  // Check if match is defined, if not, set default value to an empty object
-  
-  const { type } = useParams(); // Extract 'type' from URL parameters
+const ShowStories = () => {
+  const { type } = useParams();
   const { isLoading, stories } = useDataFetcher(type);
-  
+
   return (
     <React.Fragment>
       {isLoading ? (
-        <p className="loading">Loading...</p>
+        <Spinner animation="border" role="status"> 
+        </Spinner>
       ) : (
         <React.Fragment>
           {stories.map((story) => (
-               <Story key={story.id} story={story} /> 
+            <Card key={story.id} className="mb-3">
+              <Card.Body>
+                <Story story={story} />
+              </Card.Body>
+            </Card>
           ))}
         </React.Fragment>
       )}
