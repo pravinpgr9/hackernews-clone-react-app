@@ -1,3 +1,6 @@
+![image](https://github.com/pravinpgr9/hackernews-clone-react-app/assets/15365979/54ad1e40-fc13-4608-9ae7-094c16009935)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
