@@ -1,4 +1,4 @@
-![image](https://github.com/pravinpgr9/hackernews-clone-react-app/assets/15365979/54ad1e40-fc13-4608-9ae7-094c16009935)
+![image](https://github.com/pravinpgr9/hackernews-clone-react-app/assets/15365979/2bd70445-676f-484b-907d-b9ba39cc5870)
 
 
 # Getting Started with Create React App
